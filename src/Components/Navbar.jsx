@@ -12,19 +12,19 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* top gradient accent */}
+      
       <div className="h-1 w-full bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500"></div>
 
       <nav className="backdrop-blur supports-[backdrop-filter]:bg-black/40 bg-black/30 border-b border-white/10">
         <div className="container mx-auto px-4 navbar">
-          {/* Brand */}
+          {/* Logo section */}
           <div className="flex-1">
             <Link to="/" className="btn btn-ghost normal-case text-xl tracking-wide text-white">
               <span className="mr-2">🧸</span> ToyTopia
             </Link>
           </div>
 
-          {/* Desktop menu */}
+          {/* pc menu */}
           <ul className="menu menu-horizontal hidden md:flex gap-1">
             <li><NavLink to="/" className={navLink}>Home</NavLink></li>
             <li><NavLink to="/all-toys" className={navLink}>All Toys</NavLink></li>
@@ -33,7 +33,7 @@ const Navbar = () => {
             <li><NavLink to="/blog" className={navLink}>Blog</NavLink></li>
           </ul>
 
-          {/* Right side auth */}
+          {/* Right side portion*/}
           <div className="flex items-center gap-2">
             {user ? (
               <div className="dropdown dropdown-end">

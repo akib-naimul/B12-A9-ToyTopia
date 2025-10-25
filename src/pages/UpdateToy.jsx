@@ -31,8 +31,8 @@ const UpdateToy = () => {
     if (price < 0) return toast.error("Price must be positive");
     if (availableQuantity < 0) return toast.error("Quantity must be positive");
 
-    // Replace with PUT/PATCH to backend
-    console.log("UPDATE TOY", { id, price, availableQuantity, description });
+    
+    // console.log("UPDATE TOY", { id, price, availableQuantity, description });
 
     toast.success("Toy updated");
     navigate(-1);

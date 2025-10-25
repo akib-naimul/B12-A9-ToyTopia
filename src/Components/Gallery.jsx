@@ -21,19 +21,18 @@ const Gallery = () => {
             data-aos="fade-up"
             className="group card bg-base-100/80 backdrop-blur-sm border border-white/10 shadow-md hover:shadow-lg hover:border-primary/40 transition-all duration-300 overflow-hidden rounded-2xl"
           >
-            {/* Fixed aspect ratio container so images always fit perfectly */}
+            
             <div className="relative w-full aspect-[4/3] bg-base-200/50">
               <img
                 src={src}
                 alt={`toy-${i}`}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-              {/* soft gradient for depth */}
+                loading="lazy"/>
+              
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
             </div>
 
-            {/* optional bottom bar for subtle info/cta – keep minimal */}
+            
             <div className="card-body p-4">
               <div className="flex items-center justify-between">
                 <span className="text-sm opacity-80">Featured</span>

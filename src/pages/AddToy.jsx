@@ -25,8 +25,8 @@ const AddToy = () => {
       createdAt: new Date().toISOString(),
     };
 
-    // TODO: POST to your backend API
-    console.log("ADD TOY", payload);
+  
+    // console.log("ADD TOY", payload);
 
     toast.success("Toy added");
     navigate("/my-toys", { replace: true });
