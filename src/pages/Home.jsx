@@ -1,9 +1,3 @@
-Home
-
-
-
-
-// src/pages/Home.jsx
 import React, { useEffect, useState } from 'react';
 import Banner from '../Components/Banner';
 import Gallery from '../Components/Gallery';
