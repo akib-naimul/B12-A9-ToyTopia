@@ -55,7 +55,7 @@ const AllToys = () => {
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row items-center gap-3 justify-between">
         <h1 className="text-3xl font-bold">All Toys</h1>
-        <div className="flex gap-2 w-full sm:w-auto">
+        <div className="flex gap-2 w-full sm:w-auto text-black">
           <input
             type="text"
             className="input input-bordered w-full sm:w-72"

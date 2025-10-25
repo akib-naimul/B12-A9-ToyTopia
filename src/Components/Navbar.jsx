@@ -42,7 +42,7 @@ const Navbar = () => {
                     <img src={user.photoURL || "https://i.ibb.co/5GzXkwq/user.png"} alt="user" />
                   </div>
                 </div>
-                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-200 rounded-box w-56">
+                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-200 rounded-box w-56 text-black">
                   <li className="px-2 py-1">
                     <div className="font-semibold">{user.displayName || "User"}</div>
                     <div className="opacity-70 text-xs">{user.email}</div>
@@ -58,7 +58,7 @@ const Navbar = () => {
               </>
             )}
 
-            {/* Mobile menu */}
+            {/* menu */}
             <div className="md:hidden dropdown dropdown-end">
               <div tabIndex={0} role="button" className="btn btn-ghost btn-circle text-white">
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>

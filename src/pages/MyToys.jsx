@@ -58,10 +58,9 @@ const MyToys = () => {
       <div className="flex flex-col sm:flex-row gap-3 items-center justify-between">
         <h1 className="text-3xl font-bold">My Toys</h1>
         <select
-          className="select select-bordered w-full sm:w-56"
+          className="select select-bordered w-full sm:w-56 text-black"
           value={sortBy}
-          onChange={(e) => setSortBy(e.target.value)}
-        >
+          onChange={(e) => setSortBy(e.target.value)}>
           <option value="createdAtDesc">Newest</option>
           <option value="priceAsc">Price: Low → High</option>
           <option value="priceDesc">Price: High → Low</option>
@@ -110,8 +109,8 @@ const MyToys = () => {
             })}
             {mine.length === 0 && (
               <tr>
-                <td colSpan={7} className="text-center py-10 opacity-70">
-                  You haven’t added any toys yet.
+                <td colSpan={7} className="text-center py-10 opacity-70 font-bold text-2xl">
+                  <span className="text-3xl">Opps!</span> <br /><br />You haven’t added any toys yet.
                 </td>
               </tr>
             )}
